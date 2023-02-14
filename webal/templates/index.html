@@ -1,0 +1,115 @@
+{%extends 'main.html'%}
+{%load static%}
+{%block content%}
+<!DOCTYPE html>
+
+<!-- ======= About Section ======= -->
+<div id="about" class="about-area area-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h2>Decoración de apartamentos de alquiler</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- single-well start-->
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="well-left">
+          <div class="single-well">
+            <a href="#">
+              <img src="static/img/about/about-1.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- single-well end-->
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="well-middle">
+          <div class="single-well">
+            <a href="#">
+              <h4 class="sec-head">Transformamos espacios</h4>
+            </a>
+            <p>
+              Nuestro objetivo es rediseñar apartamentos de alquiler, aportando soluciones creativas y funcionales, que se adapten a las necesidades de nuestros clientes.
+            </p>
+            <ul>
+              <li>
+                <i class="bi bi-check"></i> Rediseños de apartamentos de alquiler
+              </li>
+              <li>
+                <i class="bi bi-check"></i> Reorientación de mobiliarios
+              </li>
+              <li>
+                <i class="bi bi-check"></i> Reparaciones de pisos y paredes, pintura
+              </li>
+              <li>
+                <i class="bi bi-check"></i> Unificación de espacios y estilos
+              </li>
+              <li>
+                <i class="bi bi-check"></i> Decoración personalizada y asesoramiento
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End col-->
+    </div>
+  </div>
+</div><!-- End About Section -->
+
+<!-- ======= hero Section ======= -->
+<section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image: url(static/img/hero-carousel/adriano-4.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Remodelación deslumbrante</h2>
+                <p class="animate__animated animate__fadeInUp">Retoques delicados para transformar decadencia en belleza</p>
+                <a href="/remodelaciones.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(static/img/hero-carousel/Adriano-2.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Ambientes unificados</h2>
+                <p class="animate__animated animate__fadeInUp">Decoración con estilo único con desarrollo en todo el inmueble</p>
+                <a href="/remodelaciones.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(static/img/hero-carousel/Adriano-3.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Transformación resonante</h2>
+                <p class="animate__animated animate__fadeInUp">No importa dónde, ni importa qué, todo espacio puede cambiar</p>
+                <a href="/remodelaciones.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+{% endblock %}

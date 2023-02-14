@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+    <title>Al Interiores - Remodelaciones</title> 
+    <section class="details-card">
+        <div class="container">
+            <div class="row">
+                {% for x in object_list %}
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="{{MEDIA_URL}}{{x.imagen.url}}" alt="">
+                            <span><h4>{{ x.titulo }}</h4></span>
+                        </div>
+                        <div class="card-desc">
+                            <h3>{{ x.titulo }}</h3>
+                            <p>{{ x.subtitulo }} </p>
+                                <a href="{% url 'post' x.url %}" class="btn-card">Leer más.</a>   
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
