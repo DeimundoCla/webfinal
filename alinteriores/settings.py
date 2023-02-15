@@ -26,7 +26,7 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:SECRET_KEY = f.read().s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["179.43.112.216/adrianocandreva.com"]
+ALLOWED_HOSTS = ["adrianocandreva.com"]
 
 
 # Application definition
@@ -117,11 +117,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'webal/static'),
-]
-
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -129,11 +124,11 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 #HTTPS SETTINGS
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = True
+#SESSION_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
+#SECURE_SSL_REDIRECT = True
 
 #HSTS SETTINGS
-SECURE_HSTS_SECONDS = 31536000 # 1 year
-SECURE_HSTS_PRELOAD = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+#SECURE_HSTS_SECONDS = 31536000 # 1 year
+#SECURE_HSTS_PRELOAD = True
+#SECURE_HSTS_INCLUDE_SUBDOMAINS = True
