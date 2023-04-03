@@ -29,7 +29,7 @@ def contacto(request):
                 'Mensaje de ' + nombre,
                 mensaje,
                 email,
-                ['deimundocla@gmail.com'])
+                ['adriancandreva@gmail.com'])
         return redirect( "index.html")
     else:
         form = ContactoForm()
